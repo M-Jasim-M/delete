@@ -1,0 +1,100 @@
+.s2main {
+    padding-top: 20px !important;
+    /* background-color: red; */
+    height: 90vh;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.s2main div:nth-of-type(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px !important;
+    font-size: 20px;
+    font-weight: 600;
+    color: #252525;
+}
+
+.s2main input {
+    outline: none;
+    text-indent: 12px;
+    padding: 8px 20px !important;
+    border-radius: 6px;
+    background: rgba(244, 244, 244, 0.90);
+    border: none;
+}
+
+.s2main input::placeholder {
+    color: #A8A8A8;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.s2main div:nth-of-type(2) svg {
+    transform: translate(10px, 28px);
+}
+
+.up {
+    border-left: 3px solid #F24822;
+    background: rgba(244, 244, 244, 0.90);
+
+}
+
+.all {
+    /* background-color: yellow; */
+    padding: 10px 0px 10px 20px !important;
+    color: #252525;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+/* this is for the responsiveness */
+
+@media(max-width:550px) {
+    .s2main {
+        display: none;
+        transform: translate(-277px, 0px);
+        /* transform: translate(200px, 0px); */
+    }
+
+    .s2main2 {
+        padding-top: 20px !important;
+        height: 100vh;
+        /* background-color: red; */
+        display: flex;
+        /* display: none; */
+        transition: 2s;
+        transform: translate(0px, 0px);
+       gap: 20px;
+       flex-direction: column;
+    }
+    .s2main2 div:nth-of-type(1) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px !important;
+        font-size: 20px;
+        font-weight: 600;
+        color: #252525;
+    }
+    .s2main2 input {
+        outline: none;
+        text-indent: 12px;
+        padding: 8px 20px !important;
+        border-radius: 6px;
+        background: rgba(244, 244, 244, 0.90);
+        border: none;
+    }
+    .s2main2 input::placeholder {
+        color: #A8A8A8;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .s2main2 div:nth-of-type(2) svg {
+        transform: translate(10px, 28px);
+    }
+    
+}
